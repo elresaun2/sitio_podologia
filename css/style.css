@@ -1,0 +1,223 @@
+:root{
+    --primario:#257290;
+    --secundario:#b5b5b5;
+    --terciario:#43b0d4;
+    --fondo:#E1F3FF;
+
+    --blanco:#ffffff;
+    --negro:#000000;
+    --fuentePrincipal:'Open Sans', sans-serif;
+    --ancho-contenedor:1200px
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.contenedor{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:rgb(223, 239, 245);
+    padding: 4rem;
+}
+.izquierda,.derecha{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: .5rem;
+}
+.izquierda_items_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+.izquierda_items_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+.izquierda_items_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-left: 2rem;
+
+}
+.derecha_items_1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+.derecha_items_2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+.derecha_items_3{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:50rem 0;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    margin-right: 2rem;
+
+}
+.izquierda_items_icono, .derecha_items_icono{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+.izquierda_items_text{
+    text-align: end;
+}
+.izquierda_items_text h3,
+.izquierda_items_text p,
+.derecha_items_text h3,
+.derecha_items_text p{
+    margin: .5rem;
+}
+.fa-tooth{
+    font-size: 2rem;
+    margin: 1.2rem;
+    color: skyblue;
+    border-radius: 20px;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centro img{
+      width: 250px;
+      height: 300px;
+  }
+
+/**_____medidas de bioseguridad________**/
+.medidas_contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:silver;
+}
+.medidas_contenedor_seccion{
+    position: relative;
+    background-position: top;
+    text-align: justify;
+    width: 25rem;
+    height: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+.medidas_contenedor_seccion_sombra_1{
+    position: absolute;
+    background-image: url(../img/distanciamiento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+      justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.medidas_contenedor_seccion_sombra_2{
+    position: absolute;
+    background-image: url(../img/niños_en_casa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+      justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.medidas_contenedor_seccion_sombra_3{
+    position: absolute;
+    background-image: url(../img/desinfeccion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+      justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.medidas_contenedor_seccion_sombra_4{
+    position: absolute;
+    background-image: url(../img/nuestros_doctores.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.medidas_contenedor_seccion_sombra_1:hover,
+.medidas_contenedor_seccion_sombra_2:hover,
+.medidas_contenedor_seccion_sombra_3:hover,
+.medidas_contenedor_seccion_sombra_4:hover{
+    opacity: 0;
+    transition: 1s;
+}
+.medidas_contenedor_seccion_icono{
+    font-size: 4rem;
+    color: var(--blanco);
+}
